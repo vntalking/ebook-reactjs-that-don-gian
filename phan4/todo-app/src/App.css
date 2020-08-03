@@ -43,3 +43,14 @@ body {
     color: #c5e2d2;
     text-decoration: line-through
 }
+
+.btn-style {
+    background: #d35e0f;
+    color: #fff;
+    border: 1px solid #d35e0f;
+    padding: 3px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    outline: none;
+}

@@ -34,11 +34,19 @@ class TodoApp extends React.Component {
         });
     };
 
+    deleteTodo = id => {
+        console.log("deleted", id);
+    };
+
+
     render() {
         return (
             <div className="container">
                 <Header />
-                <Todos todos={this.state.todos} handleChange={this.handleCheckboxChange} />
+                <Todos todos={this.state.todos}
+                    handleChange={this.handleCheckboxChange}
+                    deleteTodo={this.deleteTodo} />
+
             </div>
         );
     }
