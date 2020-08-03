@@ -35,8 +35,15 @@ class TodoApp extends React.Component {
     };
 
     deleteTodo = id => {
-        console.log("deleted", id);
+        this.setState({
+            todos: [
+                ...this.state.todos.filter(todo => {
+                    return todo.id !== id;
+                })
+            ]
+        });
     };
+
 
 
     render() {
