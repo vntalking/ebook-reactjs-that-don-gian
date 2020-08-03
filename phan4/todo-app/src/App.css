@@ -37,3 +37,9 @@ body {
 .todo-item input {
     margin-right: 15px;
 }
+
+.completed {
+    font-style: italic;
+    color: #c5e2d2;
+    text-decoration: line-through
+}

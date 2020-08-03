@@ -10,7 +10,10 @@ class TodoItem extends React.Component {
                     onChange={() => this.props.handleChange(this.props.todo.id)}
                 />
 
-                {this.props.todo.title}
+                <span className={this.props.todo.completed ? "completed" : null}>
+                    {this.props.todo.title}
+                </span>
+
             </li>
         );
     }
