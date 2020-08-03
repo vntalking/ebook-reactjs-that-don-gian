@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #fcfcfc;
+    color: #1f1f1f;
+}
+
 .header-container {
     background-color: #678c89;
     color: #fff;
@@ -8,4 +21,15 @@
     font-size: 25px;
     line-height: 1.447em;
     margin: 0px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #678c89;
+}
+
+.todo-item {
+    list-style-type: none;
+    padding: 10px 15px;
+    border-top: 1px solid #678c89;
 }
