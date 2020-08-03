@@ -54,3 +54,36 @@ body {
     float: right;
     outline: none;
 }
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+.input-text {
+    flex: 8;
+    font-size: 14px;
+    padding: 6px 15px;
+    background: rgba(103, 140, 137, 0.65);
+    border: none;
+    color: #fff;
+    outline: none;
+    font-weight: 400;
+    width: 80%;
+}
+
+.input-text::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.input-submit {
+    flex: 2;
+    border: none;
+    background: #678c89;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    width: 20%;
+    outline: none;
+}
