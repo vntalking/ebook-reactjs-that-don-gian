@@ -33,3 +33,7 @@ body {
     padding: 10px 15px;
     border-top: 1px solid #678c89;
 }
+
+.todo-item input {
+    margin-right: 15px;
+}
