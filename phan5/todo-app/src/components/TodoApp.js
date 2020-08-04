@@ -3,27 +3,15 @@ import Header from "../components/layout/Header";
 import Todos from "./Todos";
 import AddTodo from "./AddTodo"
 import uuid from "uuid";
+//khai báo thư viện axios
+import axios from "axios";
+
 
 class TodoApp extends React.Component {
     state = {
-        todos: [
-            {
-                id: 1,
-                title: "Setup development environment",
-                completed: true
-            },
-            {
-                id: 2,
-                title: "Develop website and add content",
-                completed: false
-            },
-            {
-                id: 3,
-                title: "Deploy to live server",
-                completed: false
-            }
-        ]
+        todos: []
     };
+    
 
     handleCheckboxChange = id => {
         this.setState({
@@ -56,6 +44,19 @@ class TodoApp extends React.Component {
             todos: [...this.state.todos, newTodo]
         });
     };
+
+    componentDidMount() {
+        const config = {
+            params: {
+                _limit: 5
+            }
+
+        }
+        //tạo GET request để lấy danh sách todos
+        axios.get("https://jsonplaceholder.typicode.com/todos", config)
+           .then(response => this.setState({ todos: response.data }));
+
+    }
 
 
 
