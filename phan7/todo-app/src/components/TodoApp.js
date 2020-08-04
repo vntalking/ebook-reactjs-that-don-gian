@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Todos from "./Todos";
 import Header from "../components/layout/Header";
 import AddTodo from "./AddTodo"
-
+import Footer from "../store/containers/Footer";
 //khai báo thư viện axios
 import axios from "axios";
 
@@ -65,6 +65,7 @@ function TodoApp() {
             <Todos todos={state.todos}
                 handleChange={handleCheckboxChange}
                 deleteTodo={deleteTodo} />
+            <Footer />
         </div>
     );
 
