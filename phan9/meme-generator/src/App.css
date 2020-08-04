@@ -27,8 +27,6 @@ button {
   width: 90%;
   height: 40px;
   margin-bottom: 5px;
-  border: none;
-  outline: none;
 }
 input {
   padding: 5px 8px;
@@ -43,7 +41,8 @@ button {
   position: relative;
 }
 .meme > img {
-  width: 100%;
+  width: 500px;
+  height: 400px;
   background: cover;
   margin-bottom: -5px;
   background-repeat: no-repeat;
