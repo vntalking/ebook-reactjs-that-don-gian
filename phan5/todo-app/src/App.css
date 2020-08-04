@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #fcfcfc;
+    color: #1f1f1f;
+}
+
+.header-container {
+    background-color: #678c89;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.header-title {
+    font-size: 25px;
+    line-height: 1.447em;
+    margin: 0px;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #678c89;
+}
+
+.todo-item {
+    list-style-type: none;
+    padding: 10px 15px;
+    border-top: 1px solid #678c89;
+}
+
+.todo-item input {
+    margin-right: 15px;
+}
+
+.completed {
+    font-style: italic;
+    color: #c5e2d2;
+    text-decoration: line-through
+}
+
+.btn-style {
+    background: #d35e0f;
+    color: #fff;
+    border: 1px solid #d35e0f;
+    padding: 3px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    outline: none;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+.input-text {
+    flex: 8;
+    font-size: 14px;
+    padding: 6px 15px;
+    background: rgba(103, 140, 137, 0.65);
+    border: none;
+    color: #fff;
+    outline: none;
+    font-weight: 400;
+    width: 80%;
+}
+
+.input-text::placeholder {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.input-submit {
+    flex: 2;
+    border: none;
+    background: #678c89;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    width: 20%;
+    outline: none;
+}
