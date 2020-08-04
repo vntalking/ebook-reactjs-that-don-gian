@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/layout/Header";
 import Todos from "./Todos";
 import AddTodo from "./AddTodo"
-import uuid from "uuid";
+
 //khai báo thư viện axios
 import axios from "axios";
 
@@ -11,7 +11,7 @@ class TodoApp extends React.Component {
     state = {
         todos: []
     };
-    
+
 
     handleCheckboxChange = id => {
         this.setState({
@@ -35,15 +35,19 @@ class TodoApp extends React.Component {
     };
 
     addTodo = title => {
-        const newTodo = {
-            id: uuid.v4(),
+        const todoData = {
             title: title,
             completed: false
-        };
-        this.setState({
-            todos: [...this.state.todos, newTodo]
-        });
+        }
+        axios.post("https://jsonplaceholder.typicode.com/todos", todoData)
+            .then(response => {
+                console.log(response.data)
+                this.setState({
+                    todos: [...this.state.todos, response.data]
+                })
+            });
     };
+
 
     componentDidMount() {
         const config = {
@@ -54,7 +58,7 @@ class TodoApp extends React.Component {
         }
         //tạo GET request để lấy danh sách todos
         axios.get("https://jsonplaceholder.typicode.com/todos", config)
-           .then(response => this.setState({ todos: response.data }));
+            .then(response => this.setState({ todos: response.data }));
 
     }
 
