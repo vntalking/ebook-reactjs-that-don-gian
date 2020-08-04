@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #fcfcfc;
+  color: #1f1f1f;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 27px;
+}
+.meme-container {
+  display: flex;
+}
+form {
+  background: #ad1457;
+  text-align: center;
+  padding-top: 20px;
+}
+input,
+button {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+}
+input {
+  padding: 5px 8px;
+}
+button {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ad1457;
+  font-weight: bold;
+}
+.meme {
+  position: relative;
+}
+.meme > img {
+  width: 100%;
+  background: cover;
+  margin-bottom: -5px;
+  background-repeat: no-repeat;
+}
+.meme > h2 {
+  position: absolute;
+  max-width: 36em;
+  font-size: 36px;
+  text-align: center;
+  left: 49%;
+  transform: translateX(-50%);
+  margin: 0.3em 0;
+  padding: 0;
+  font-family: impact, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+.meme > .top {
+  top: 0.1em;
+}
+.meme > .bottom {
+  bottom: 0.1em;
+}
+
+/* On screens that are 768px or less */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+  .meme-container {
+    flex-direction: column;
+  }
+  .meme > h2 {
+    font-size: 30px;
+  }
+}
