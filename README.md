@@ -1,7 +1,6 @@
 # Ebook: Lập trình React thật đơn giản<br/>
 ### Từng bước tạo ứng dụng từ A - Z
 ![Sách học React tiếng việt](https://vntalking.com/wp-content/uploads/2020/08/ReactJS-Cover_v3.png)
-
 Dự án sách được thực hiện bởi [VNTALKING.COM](https://vntalking.com)<br/>
 **Nội dung cuốn sách:**<br/>
 1. Cách cài đặt và bắt đầu làm việc với ReactJS (2 cách)
@@ -24,10 +23,10 @@ Dự án sách được thực hiện bởi [VNTALKING.COM](https://vntalking.co
 ## Yêu cầu 
 Đây là cuốn sách “No Experience Require“, tức là không yêu cầu người có kinh nghiệm ReactJS. Tất cả sẽ được mình hướng dẫn từ con số 0.
 
-Do ReactJS là thư viện Javascript được xây dựng để tạo các ứng dụng web, nên sẽ tốt hơn nếu bạn đã có:
-• Kiến thức cơ bản về HTML và CSS.
-• Javascript cơ bản (Object, Arrays, điều kiện.v.v…)
-• Đã biết tới Javascript ES6 (arrow function.v.v…)
+Do ReactJS là thư viện Javascript được xây dựng để tạo các ứng dụng web, nên sẽ tốt hơn nếu bạn đã có:  
+• Kiến thức cơ bản về HTML và CSS.  
+• Javascript cơ bản (Object, Arrays, điều kiện.v.v…)  
+• Đã biết tới Javascript ES6 (arrow function.v.v…)  
 
 Nếu bạn vẫn còn đang bỡ ngỡ với Javascript, cũng không sao! Đọc xong cuốn sách này bạn hiểu Javascript hơn.
 
